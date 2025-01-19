@@ -34,6 +34,7 @@ namespace BirdObservationsSeleniumtests
 
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
 
+            //Test af Add
             IWebElement inputElement = _driver.FindElement(By.Id("inputName"));
             inputElement.SendKeys("TestBird");
             IWebElement inputElement2 = _driver.FindElement(By.Id("inputHowMany"));
